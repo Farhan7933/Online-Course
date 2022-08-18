@@ -1,0 +1,155 @@
+:root {
+  --primary-color: #1c94fc;
+  --secondary-color: #40affe;
+  --dark-color: #26282b;
+  --light-dark-color: #353941;
+  --dark-background: #1a1a1a;
+  --white-color: #ffffff;
+  --orange-color: #ffa500;
+  --form-card-background: rgba(0, 0, 0, 0.77);
+  --form-background: rgba(0, 0, 0, 0.8);
+  --card-background: rgba(67, 68, 71, 0.5);
+  --black-color: #000000;
+  --main-background: #222;
+  --teachers-background: #212121;
+  --twitter-color: #00acee;
+  --facebook-color: #3b5998;
+  --instagram-color: #e1306c;
+  --linked-in-color: #00a0dc;
+  --youtube-color: #c4302b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.banner {
+  margin-top: 80px !important;
+}
+
+#top{
+    background-color: var(--dark-color);
+}
+
+main {
+  background-color: var(--main-background);
+}
+
+.myNavbar {
+    background-color: var(--dark-background);
+}
+
+.myLSQImg {
+    width: 20px;
+}
+
+#signUp {
+    background-image: url('../assets/images/banner.png');
+    background-repeat: no-repeat;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn-gradient {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--white-color);
+}
+
+.checked {
+    color: var(--orange-color);
+}
+
+#signUpForm {
+    background-color: var(--form-card-background);
+}
+
+#signUpForm .form-control {
+    background-color: var(--form-background);
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card {
+  margin: 0 0.5em;
+  border: none;
+  border-radius: 0;
+  background-color: var(--card-background);
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-control-next {
+  transform: translateX(50%);
+}
+
+.teachers-section, .students-section {
+  background-color: var(--main-background);
+}
+
+@media (min-width: 768px) {
+  .card img {
+    height: 11em;
+  }
+}
+
+.rounded-icon {
+  color: var(--black-color);
+}
+
+.teacher-image {
+  width: 180px;
+}
+
+.category-size {
+  width: 220px;
+}
+
+.student-image {
+  width: 150px;
+  height: 150px;
+}
+
+footer {
+  background: var(--dark-color);
+}
+
+.twitter {
+  color: var(--twitter-color);
+}
+
+.facebook {
+  color: var(--facebook-color);
+}
+
+.instagram {
+  color: var(--instagram-color);
+}
+
+.linked-in {
+  color: var(--linked-in-color);
+}
+
+.youtube {
+  color: var(--youtube-color);
+}

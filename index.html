@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>LSQ Learning Site</title>
+  </head>
+  <body id="top" class="text-light">
+    <header>
+      <!-- navigation bar -->
+      <nav
+        class="myNavbar navbar navbar-expand-lg text-white fixed-top"
+        id="mainNav"
+      >
+        <div class="container">
+          <div class="myLSQImg img mr-2">
+            <img class="img-fluid" src="assets/images/logo.jpg" alt="" />
+          </div>
+
+          <a class="navbar-brand mr-auto" href="#top">LSQ Learning Site</a>
+          <button
+            class="navbar-toggler navbar-toggler-right"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle Navigation"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto font-weight-normal">
+              <li class="nav-item ml-5">
+                <a class="nav-link js-scroll-trigger text-white" href="#courses"
+                  >Courses</a
+                >
+              </li>
+              <li class="nav-item ml-5">
+                <a class="nav-link text-white" href="#teachers">Teachers</a>
+              </li>
+              <li class="nav-item ml-5 text-white">
+                <a class="nav-link text-white" href="#reviews">Reviews</a>
+              </li>
+              <li class="nav-item ml-5">
+                <a class="nav-link text-white" href="#contact">Contact</a>
+              </li>
+              <div class="nav-item input-group ml-5">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search course"
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-gradient" type="button">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- landing page -->
+      <div class="banner container">
+        <div class="row">
+          <!-- landing page text content -->
+          <div class="mt-5 col-md-5 display-4">
+            Build your skill to advance your career path
+            <p class="mt-3 lead">
+              The best and largest course website in India. <br />
+              Take a trial and enjoy our features.
+            </p>
+            <a
+              class="btn btn-gradient px-3 font-weight-normal mb-3 p-2"
+              type="button"
+              href="#signUpForm"
+            >
+              Sign Up
+            </a>
+          </div>
+
+          <!-- form card for sign up -->
+          <div
+            id="signUp"
+            class="col-md-7 d-flex justify-content-md-end justify-content-center"
+          >
+            <div id="signUpForm" class="card">
+              <div class="card-body text-light">
+                <h4>30 Seconds to sign up</h4>
+                <p class="text-muted">
+                  Get started with the free first tutorial
+                </p>
+
+                <form class="needs-validation">
+                  <div class="form-outline mb-3">
+                    <input
+                      type="text"
+                      id="name"
+                      class="form-control text-white"
+                      placeholder="Name *"
+                    />
+                    <div class="invalid-feedback">
+                      Please enter a valide name
+                    </div>
+                  </div>
+
+                  <div class="form-outline mb-3">
+                    <input
+                      type="email"
+                      id="email"
+                      class="form-control text-white"
+                      placeholder="Email *"
+                    />
+                    <div class="invalid-feedback">Enter a valid email</div>
+                  </div>
+
+                  <div class="form-outline mb-3">
+                    <input
+                      type="text"
+                      id="phoneNumber"
+                      class="form-control text-white"
+                      placeholder="Phone Number *"
+                    />
+                    <div class="invalid-feedback">Enter a valid Contact No</div>
+                  </div>
+
+                  <div class="form-outline mb-3">
+                    <input
+                      type="text"
+                      id="city"
+                      class="form-control text-white"
+                      placeholder="City *"
+                    />
+                    <div class="invalid-feedback">Enter a valid city</div>
+                  </div>
+
+                  <div class="form-outline mb-3">
+                    <textarea
+                      name="notes"
+                      id="notes"
+                      class="form-control text-white"
+                      cols="30"
+                      rows="4"
+                      placeholder="Notes"
+                    ></textarea>
+                  </div>
+
+                  <button
+                    id="submit-form"
+                    type="submit"
+                    class="btn btn-gradient w-100"
+                  >
+                    Get access now
+                  </button>
+                </form>
+                <p class="text-muted mb-0">10000+ professional trained</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- courses  -->
+      <div class="container my-5 pt-5 pb-1">
+        <!-- course carousel -->
+        <section id="courses" class="text-center">
+          <p class="h2">A broad selection of courses</p>
+          <span class="lead"
+            >Choose from 90,000+ online video courses with new additions
+            published every month</span
+          >
+          <div
+            id="courseCarousel"
+            class="carousel slide"
+            data-interval="false"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <!-- course carousel -->
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+                  <!-- single card -->
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/deep-learning.jpg"
+                      alt="1 slide"
+                    />
+                    <h5 class="card-title mt-2">
+                      <a href="#!" class="text-white">
+                        Data Science: Deep Learning</a
+                      >
+                    </h5>
+                    <div class="card-body">
+                      <p>
+                        <small>By: Lazy Programmer Inc.</small>
+                      </p>
+                      <small>
+                        <p class="rating">
+                          <span>3.5</span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </p>
+                        <p class="fa fa-inr"></p>
+                        <span>
+                          399<del class="ml-3">
+                            <i class="fa fa-inr"></i>2999</del
+                          >
+                        </span>
+                      </small>
+                    </div>
+                  </div>
+
+                  <!-- single card -->
+                  <div class="card d-none d-sm-block">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/Javascript.jpg"
+                      alt="2 slide"
+                    />
+                    <h5 class="card-title mt-2">
+                      <a href="#!" class="text-white">1 Hour JavaScript</a>
+                    </h5>
+                    <div class="card-body">
+                      <p><small>By: Tech Learning</small></p>
+                      <small>
+                        <p class="rating">
+                          <span>3.1</span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </p>
+                        <p class="fa fa-inr"></p>
+                        <span>
+                          199<del class="ml-3">
+                            <i class="fa fa-inr"></i>999</del
+                          >
+                        </span>
+                      </small>
+                    </div>
+                  </div>
+
+                  <!-- single card -->
+                  <div class="card d-none d-md-block border-0">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/advanced-js.jpg"
+                      alt="3 slide"
+                    />
+                    <h5 class="card-title mt-2">
+                      <a href="#!" class="text-white">Advanced Javascript</a>
+                    </h5>
+                    <div class="card-body">
+                      <p>
+                        <small>By: Infinite Skills</small>
+                      </p>
+                      <small>
+                        <p class="rating">
+                          <span>3.9</span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                        </p>
+                        <p class="fa fa-inr"></p>
+                        <span>
+                          299<del class="ml-3">
+                            <i class="fa fa-inr"></i>1499</del
+                          >
+                        </span>
+                      </small>
+                    </div>
+                  </div>
+
+                  <!-- single card -->
+                  <div class="card d-none d-lg-block border-0">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/aws.jpg"
+                      alt="3 slide"
+                    />
+                    <h5 class="card-title mt-2">
+                      <a href="#!" class="text-white"
+                        >AWS Certified Security Speciality 2022</a
+                      >
+                    </h5>
+                    <div class="card-body">
+                      <p><small>By: Paul Coady</small></p>
+                      <small>
+                        <p class="rating">
+                          <span>5.0</span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                        </p>
+                        <p class="fa fa-inr"></p>
+                        <span>
+                          499<del class="ml-3">
+                            <i class="fa fa-inr"></i>3999</del
+                          >
+                        </span>
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- course carousel -->
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                  <!-- single card -->
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/advanced-web.jpg"
+                      alt="1 slide"
+                    />
+                    <h5 class="card-title mt-2">
+                      <a href="#!" class="text-white">
+                        Advanced Web Developement Course</a
+                      >
+                    </h5>
+                    <div class="card-body">
+                      <p><small>By: Brad Hussey</small></p>
+                      <small>
+                        <p class="rating">
+                          <span>3.7</span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </p>
+                        <p class="fa fa-inr"></p>
+                        <span>
+                          799<del class="ml-3">
+                            <i class="fa fa-inr"></i>9999</del
+                          >
+                        </span>
+                      </small>
+                    </div>
+                  </div>
+
+                  <!-- single card -->
+                  <div class="card d-none d-sm-block">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/aws-certification.jpg"
+                      alt="2 slide"
+                    />
+                    <h5 class="card-title mt-2">
+                      <a href="#!" class="text-white">AWS Certified 2022</a>
+                    </h5>
+                    <div class="card-body">
+                      <p>
+                        <small>By: Backspace Academey</small>
+                      </p>
+                      <small>
+                        <p class="rating">
+                          <span>4.4</span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                        </p>
+                        <p class="fa fa-inr"></p>
+                        <span>
+                          699<del class="ml-3">
+                            <i class="fa fa-inr"></i>1299</del
+                          >
+                        </span>
+                      </small>
+                    </div>
+                  </div>
+
+                  <!-- single card -->
+                  <div class="card d-none d-md-block border-0">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/aws-certified.jpg"
+                      alt="3 slide"
+                    />
+                    <h5 class="card-title mt-2">
+                      <a href="#!" class="text-white"
+                        >Amazon Web Services(AWS)</a
+                      >
+                    </h5>
+                    <div class="card-body">
+                      <p>
+                        <small>By: Chandra Lingam</small>
+                      </p>
+                      <small>
+                        <p class="rating">
+                          <span>4.0</span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                        </p>
+                        <p class="fa fa-inr"></p>
+                        <span>
+                          239<del class="ml-3">
+                            <i class="fa fa-inr"></i>1199</del
+                          >
+                        </span>
+                      </small>
+                    </div>
+                  </div>
+
+                  <!-- single card -->
+                  <div class="card d-none d-lg-block border-0">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/excel.jpg"
+                      alt="3 slide"
+                    />
+                    <h5 class="card-title mt-2">
+                      <a href="#!" class="text-white"
+                        >Use Excel Like a Pro. Fast.</a
+                      >
+                    </h5>
+                    <div class="card-body">
+                      <p><small>By: Kieran Luke</small></p>
+                      <small>
+                        <p class="rating">
+                          <span>5.0</span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                        </p>
+                        <p class="fa fa-inr"></p>
+                        <span>
+                          549<del class="ml-3">
+                            <i class="fa fa-inr"></i>2499</del
+                          >
+                        </span>
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- course carousel -->
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                  <!-- single card -->
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/frontend.jpg"
+                      alt="1 slide"
+                    />
+                    <h5 class="card-title mt-2">
+                      <a href="#!" class="text-white">
+                        Introduction to Web Developement</a
+                      >
+                    </h5>
+                    <div class="card-body">
+                      <p><small>By: Mark Lassoff</small></p>
+                      <small>
+                        <p class="rating">
+                          <span>3.3</span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </p>
+                        <p class="fa fa-inr"></p>
+                        <span>
+                          333<del class="ml-3">
+                            <i class="fa fa-inr"></i>999</del
+                          >
+                        </span>
+                      </small>
+                    </div>
+                  </div>
+
+                  <!-- single card -->
+                  <div class="card d-none d-sm-block">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/git.jpg"
+                      alt="2 slide"
+                    />
+                    <h5 class="card-title mt-2">
+                      <a href="#!" class="text-white"
+                        >Git a Web Developer Job</a
+                      >
+                    </h5>
+                    <div class="card-body">
+                      <p>
+                        <small>By: Hunter x hunter</small>
+                      </p>
+                      <small>
+                        <p class="rating">
+                          <span>3.8</span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </p>
+                        <p class="fa fa-inr"></p>
+                        <span>
+                          899<del class="ml-3">
+                            <i class="fa fa-inr"></i>1899</del
+                          >
+                        </span>
+                      </small>
+                    </div>
+                  </div>
+
+                  <!-- single card -->
+                  <div class="card d-none d-md-block border-0">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/python-crash-course.jpg"
+                      alt="3 slide"
+                    />
+                    <h5 class="card-title mt-2">
+                      <a href="#!" class="text-white"
+                        >Learn Python: The complete Course</a
+                      >
+                    </h5>
+                    <div class="card-body">
+                      <p>
+                        <small>By: Infinite Skills</small>
+                      </p>
+                      <small>
+                        <p class="rating">
+                          <span>5.0</span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                        </p>
+                        <p class="fa fa-inr"></p>
+                        <span>
+                          49<del class="ml-3">
+                            <i class="fa fa-inr"></i>1899</del
+                          >
+                        </span>
+                      </small>
+                    </div>
+                  </div>
+
+                  <!-- single card -->
+                  <div class="card d-none d-lg-block border-0">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/web-developement.jpg"
+                      alt="3 slide"
+                    />
+                    <h5 class="card-title mt-2">
+                      <a href="#!" class="text-white"
+                        >The Complete Web Developer Course 2.0</a
+                      >
+                    </h5>
+                    <div class="card-body">
+                      <p><small>By: Paul Coady</small></p>
+                      <small>
+                        <p class="rating">
+                          <span>5.0</span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                        </p>
+                        <p class="fa fa-inr"></p>
+                        <span>
+                          200<del class="ml-3">
+                            <i class="fa fa-inr"></i>1999</del
+                          >
+                        </span>
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#courseCarousel"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#courseCarousel"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Why Course ? -->
+        <div class="text-center my-5">
+          <h3>Why you should try this course?</h3>
+          <div class="row mt-4">
+            <!-- single card  -->
+            <div
+              class="col col-12 col-sm-6 col-md-4 mb-4 d-flex align-items-stretch"
+            >
+              <div class="card">
+                <div class="card-body">
+                  <span class="fa-stack fa-2x">
+                    <i
+                      class="fa fa-circle fa-stack-2x rounded-icon text-primary"
+                    ></i>
+                    <i class="fas fa-mobile-android-alt fa-stack-1x"></i>
+                  </span>
+                  <h5 class="card-title">Mobile friendly courses</h5>
+                  <p class="card-text">
+                    Feel free to learn anywhere, anytime with our tutorial
+                    classes available on a mobile friendly platform.
+                  </p>
+                  <a href="#!" class="font-weight-bold">
+                    <span>
+                      Learn more<i class="fas fa-chevron-right"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- single card  -->
+            <div
+              class="col col-12 col-sm-6 col-md-4 mb-4 d-flex align-items-stretch"
+            >
+              <div class="card">
+                <div class="card-body">
+                  <span class="fa-stack fa-2x">
+                    <i
+                      class="fa fa-circle fa-stack-2x rounded-icon text-primary"
+                    ></i>
+                    <i class="fas fa-graduation-cap fa-stack-1x"></i>
+                  </span>
+                  <h5 class="card-title">Study at your own pace</h5>
+                  <p class="card-text">
+                    Your study schedule is just that yours. Set your own time
+                    table and study when it suits you.
+                  </p>
+                  <a href="#!" class="font-weight-bold">
+                    <span>
+                      Learn more<i class="fas fa-chevron-right"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- single card  -->
+            <div
+              class="col col-12 col-sm-6 col-md-4 mb-4 d-flex align-items-stretch"
+            >
+              <div class="card">
+                <div class="card-body">
+                  <span class="fa-stack fa-2x">
+                    <i
+                      class="fa fa-circle fa-stack-2x rounded-icon text-primary"
+                    ></i>
+                    <i class="fas fa-chalkboard fa-stack-1x"></i>
+                  </span>
+                  <h5 class="card-title">Hands-on learning</h5>
+                  <p class="card-text">
+                    Upskill with interactive courses, projects, labs and
+                    practice what you've learned with sandboxes.
+                  </p>
+                  <a href="#!" class="font-weight-bold">
+                    <span>
+                      Learn more<i class="fas fa-chevron-right"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- single card  -->
+            <div
+              class="col col-12 col-sm-6 col-md-4 mb-4 d-flex align-items-stretch"
+            >
+              <div class="card">
+                <div class="card-body">
+                  <span class="fa-stack fa-2x">
+                    <i
+                      class="fa fa-circle fa-stack-2x rounded-icon text-primary"
+                    ></i>
+                    <i class="fas fa-book-open fa-stack-1x"></i>
+                  </span>
+                  <h5 class="card-title">Skill assessments</h5>
+                  <p class="card-text">
+                    Get personalised recommendations for where to start and
+                    continue learning with our assessments.
+                  </p>
+                  <a href="#!" class="font-weight-bold">
+                    <span>
+                      Learn more<i class="fas fa-chevron-right"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- single card  -->
+            <div
+              class="col col-12 col-sm-6 col-md-4 mb-4 d-flex align-items-stretch"
+            >
+              <div class="card">
+                <div class="card-body">
+                  <span class="fa-stack fa-2x">
+                    <i
+                      class="fa fa-circle fa-stack-2x rounded-icon text-primary"
+                    ></i>
+                    <i class="fas fa-road fa-stack-1x"></i>
+                  </span>
+                  <h5 class="card-title">Paths</h5>
+                  <p class="card-text">
+                    Learning material curated by experts to help your team build
+                    the right skills in the right order.
+                  </p>
+                  <a href="#!" class="font-weight-bold">
+                    <span>
+                      Learn more<i class="fas fa-chevron-right"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- single card  -->
+            <div
+              class="col col-12 col-sm-6 col-md-4 mb-4 d-flex align-items-stretch"
+            >
+              <div class="card">
+                <div class="card-body">
+                  <span class="fa-stack fa-2x">
+                    <i
+                      class="fa fa-circle fa-stack-2x rounded-icon text-primary"
+                    ></i>
+                    <i class="fas fa-chalkboard-teacher fa-stack-1x"></i>
+                  </span>
+                  <h5 class="card-title">One on one coaching</h5>
+                  <p class="card-text">
+                    Trouble understanding a concept? No problem - our tutors
+                    will be happy to conduct an exclusive session for you.
+                  </p>
+                  <a href="#!" class="font-weight-bold">
+                    <span>
+                      Learn more<i class="fas fa-chevron-right"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <!-- Teachers -->
+        <div class="container my-5 pt-5 text-center">
+          <div>
+            <p class="display-4">Our Experienced Teachers</p>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-12">
+              <div class="card teachers-section">
+                <div class="card-body px-4 py-5">
+                  <!-- Carousel wrapper -->
+                  <div
+                    id="teachers"
+                    class="carousel slide carousel-dark"
+                    data-ride="carousel"
+                    data-pause="false"
+                    data-interval="4000"
+                  >
+                    <!-- Inner -->
+                    <div class="carousel-inner pb-5">
+                      <!-- Single item -->
+                      <div class="carousel-item active">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-lg-10 col-xl-8">
+                            <div class="row">
+                              <div
+                                class="col-lg-4 d-flex justify-content-center"
+                              >
+                                <img
+                                  src="assets/images/teachers/teacher-1.png"
+                                  class="rounded-circle shadow-1 mb-4 mb-lg-0 teacher-image"
+                                  alt="woman avatar"
+                                />
+                              </div>
+                              <div
+                                class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0"
+                              >
+                                <h4 class="mb-4">Saitama - Web Developer</h4>
+                                <p class="mb-0 pb-3">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. A aliquam amet animi
+                                  blanditiis consequatur debitis dicta
+                                  distinctio, enim error eum iste libero modi
+                                  nam natus perferendis possimus quasi sint sit
+                                  tempora voluptatem. Est, exercitationem id
+                                  ipsa ipsum laboriosam perferendis.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Single item -->
+                      <div class="carousel-item">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-lg-10 col-xl-8">
+                            <div class="row">
+                              <div
+                                class="col-lg-4 d-flex justify-content-center"
+                              >
+                                <img
+                                  src="assets/images/teachers/teacher-2.png"
+                                  class="rounded-circle shadow-1 mb-4 mb-lg-0 teacher-image"
+                                  alt="woman avatar"
+                                />
+                              </div>
+                              <div
+                                class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0"
+                              >
+                                <h4 class="mb-4">Nanika - Graphic Designer</h4>
+                                <p class="mb-0 pb-3">
+                                  Sed ut perspiciatis unde omnis iste natus
+                                  error sit voluptatem accusantium doloremque
+                                  laudantium, totam rem aperiam, eaque ipsa quae
+                                  ab illo inventore veritatis et quasi
+                                  architecto beatae vitae dicta sunt explicabo.
+                                  Nemo enim ipsam voluptatem quia voluptas sit
+                                  aspernatur.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Single item -->
+                      <div class="carousel-item">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-lg-10 col-xl-8">
+                            <div class="row">
+                              <div
+                                class="col-lg-4 d-flex justify-content-center"
+                              >
+                                <img
+                                  src="assets/images/teachers/teacher-3.jpg"
+                                  class="rounded-circle shadow-1 mb-4 mb-lg-0 teacher-image"
+                                  alt="woman avatar"
+                                />
+                              </div>
+                              <div
+                                class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0"
+                              >
+                                <h4 class="mb-4">
+                                  Hashira - Marketing Specialist
+                                </h4>
+                                <p class="mb-0 pb-3">
+                                  At vero eos et accusamus et iusto odio
+                                  dignissimos qui blanditiis praesentium
+                                  voluptatum deleniti atque corrupti quos
+                                  dolores et quas molestias excepturi sint
+                                  occaecati cupiditate non provident, similique
+                                  sunt in culpa qui officia mollitia animi id
+                                  laborum et dolorum fuga.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Single item -->
+                      <div class="carousel-item">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-lg-10 col-xl-8">
+                            <div class="row">
+                              <div
+                                class="col-lg-4 d-flex justify-content-center"
+                              >
+                                <img
+                                  src="assets/images/teachers/teacher-4.png"
+                                  class="rounded-circle shadow-1 mb-4 mb-lg-0 teacher-image"
+                                  alt="woman avatar"
+                                />
+                              </div>
+                              <div
+                                class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0"
+                              >
+                                <h4 class="mb-4">
+                                  Gon killua - Physics(For IIT-JEE)
+                                </h4>
+                                <p class="mb-0 pb-3">
+                                  Accusantium ea ad provident laborum
+                                  consectetur suscipit unde recusandae itaque
+                                  orem ipsum dolor sit amet consectetur,
+                                  adipisicing elit. Consectetur doloribus fugit
+                                  sunt quidem perferendis, voluptate eos nulla
+                                  ex. Voluptates, illum!.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Inner -->
+
+                    <!-- Controls -->
+                    <a
+                      class="carousel-control-prev"
+                      role="button"
+                      href="#teachers"
+                      data-slide="prev"
+                    >
+                      <span class="carousel-control-prev-icon"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a
+                      class="carousel-control-next"
+                      role="button"
+                      href="#teachers"
+                      data-slide="next"
+                    >
+                      <span class="carousel-control-next-icon"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  <!-- Carousel wrapper -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Top categories -->
+        <div class="container">
+          <h1>Top Categories</h1>
+          <div class="row">
+            <!-- single category  -->
+            <div class="col my-4 text-center">
+              <a href="#!">
+                <img
+                  src="assets/images/Top-categories/category-1.jpg"
+                  class="rounded-circle category-size"
+                  alt="Design"
+                />
+              </a>
+              <p class="lead">Design</p>
+            </div>
+
+            <!-- single category  -->
+            <div class="col my-4 text-center">
+              <a href="#!">
+                <img
+                  src="assets/images/Top-categories/category-2.jpg"
+                  class="rounded-circle category-size"
+                  alt="Developement"
+                />
+              </a>
+              <p class="lead">Developement</p>
+            </div>
+
+            <!-- single category   -->
+            <div class="col my-4 text-center">
+              <a href="#!">
+                <img
+                  src="assets/images/Top-categories/category-3.jpg"
+                  class="rounded-circle category-size"
+                  alt="Business"
+                />
+              </a>
+              <p class="lead">Business</p>
+            </div>
+
+            <!-- single category   -->
+            <div class="col my-4 text-center">
+              <a href="#!">
+                <img
+                  src="assets/images/Top-categories/category-4.jpg"
+                  class="rounded-circle category-size"
+                  alt="Perosnal Developement"
+                />
+              </a>
+              <p class="lead">Personal Development</p>
+            </div>
+
+            <!-- single category  -->
+            <div class="col my-4 text-center">
+              <a href="#!">
+                <img
+                  src="assets/images/Top-categories/category-5.jpg"
+                  class="rounded-circle category-size"
+                  alt="Photography"
+                />
+              </a>
+              <p class="lead">Photography</p>
+            </div>
+
+            <!-- single category  -->
+            <div class="col my-4 text-center">
+              <a href="#!">
+                <img
+                  src="assets/images/Top-categories/category-6.jpg"
+                  class="rounded-circle category-size"
+                  alt="Music"
+                />
+              </a>
+              <p class="lead">Music</p>
+            </div>
+
+            <!-- single category  -->
+            <div class="col my-4 text-center">
+              <a href="#!">
+                <img
+                  src="assets/images/Top-categories/category-7.jpg"
+                  class="rounded-circle category-size"
+                  alt="IT and Software"
+                />
+              </a>
+              <p class="lead">IT and Software</p>
+            </div>
+
+            <!-- single category   -->
+            <div class="col my-4 text-center">
+              <a href="#!">
+                <img
+                  src="assets/images/Top-categories/category-8.jpg"
+                  class="rounded-circle category-size"
+                  alt="Marketing"
+                />
+              </a>
+              <p class="lead">Marketing</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- rating system -->
+        <div id="reviews" class="container mt-5">
+          <div class="h1">Students Reviews</div>
+          <!-- Carousel wrapper -->
+          <div
+            id="students"
+            class="carousel slide carousel-dark text-center students-section"
+            data-mdb-ride="carousel"
+          >
+            <!-- Inner -->
+            <div class="carousel-inner py-4">
+              <!-- Single item -->
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="row">
+                    <!-- single student  -->
+                    <div class="col-lg-4">
+                      <img
+                        class="rounded-circle mb-4 student-image"
+                        src="assets/images/students/student-1.jfif"
+                        alt="avatar"
+                      />
+                      <h5 class="mb-3">Chrollo</h5>
+                      <p>UX Designer</p>
+                      <p>
+                        <i class="fas fa-quote-left pe-2"></i>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Quod eos id officiis hic tenetur quae quaerat ad
+                        velit ab hic tenetur.
+                      </p>
+                      <ul
+                        class="list-unstyled d-flex justify-content-center text-warning mb-0"
+                      >
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                      </ul>
+                    </div>
+
+                    <!-- single student  -->
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <img
+                        class="rounded-circle student-image mb-4"
+                        src="assets/images/students/student-2.jfif"
+                        alt="avatar"
+                      />
+                      <h5 class="mb-3">Luciffer</h5>
+                      <p>Web Developer</p>
+                      <p>
+                        <i class="fas fa-quote-left pe-2"></i>
+                        Ut enim ad minima veniam, quis nostrum exercitationem
+                        ullam corporis suscipit laboriosam, nisi ut aliquid
+                        commodi.
+                      </p>
+                      <ul
+                        class="list-unstyled d-flex justify-content-center text-warning mb-0"
+                      >
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li>
+                          <i class="fas fa-star-half-alt fa-sm"></i>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- single student  -->
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <img
+                        class="rounded-circle student-image mb-4 student-image"
+                        src="assets/images/students/student-3.jfif"
+                        alt="avatar"
+                      />
+                      <h5 class="mb-3">Vegeta</h5>
+                      <p>Photographer</p>
+                      <p>
+                        <i class="fas fa-quote-left pe-2"></i>
+                        At vero eos et accusamus et iusto odio dignissimos
+                        ducimus qui blanditiis praesentium voluptatum deleniti
+                        atque corrupti.
+                      </p>
+                      <ul
+                        class="list-unstyled d-flex justify-content-center text-warning mb-0"
+                      >
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="far fa-star fa-sm"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Single item -->
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <!-- single student  -->
+                    <div class="col-lg-4">
+                      <img
+                        class="rounded-circle student-image mb-4"
+                        src="assets/images/students/student-4.jfif"
+                        alt="avatar"
+                      />
+                      <h5 class="mb-3">Alexander</h5>
+                      <p>React Js</p>
+                      <p>
+                        <i class="fas fa-quote-left pe-2"></i>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Quod eos id officiis hic tenetur quae quaerat ad
+                        velit ab hic tenetur.
+                      </p>
+                      <ul
+                        class="list-unstyled d-flex justify-content-center text-warning mb-0"
+                      >
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                      </ul>
+                    </div>
+
+                    <!-- single student  -->
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <img
+                        class="rounded-circle student-image mb-4"
+                        src="assets/images/students/student-5.jfif"
+                        alt="avatar"
+                      />
+                      <h5 class="mb-3">Ging</h5>
+                      <p>Android Developement</p>
+                      <p>
+                        <i class="fas fa-quote-left pe-2"></i>
+                        Ut enim ad minima veniam, quis nostrum exercitationem
+                        ullam corporis suscipit laboriosam, nisi ut aliquid
+                        commodi.
+                      </p>
+                      <ul
+                        class="list-unstyled d-flex justify-content-center text-warning mb-0"
+                      >
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li>
+                          <i class="fas fa-star-half-alt fa-sm"></i>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- single student -->
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <img
+                        class="rounded-circle student-image mb-4"
+                        src="assets/images/students/student-6.jfif"
+                        alt="avatar"
+                      />
+                      <h5 class="mb-3">Haikyuu</h5>
+                      <p>Web designing</p>
+                      <p>
+                        <i class="fas fa-quote-left pe-2"></i>
+                        At vero eos et accusamus et iusto odio dignissimos
+                        ducimus qui blanditiis praesentium voluptatum deleniti
+                        atque corrupti.
+                      </p>
+                      <ul
+                        class="list-unstyled d-flex justify-content-center text-warning mb-0"
+                      >
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="far fa-star fa-sm"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Single item -->
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <!-- single student  -->
+                    <div class="col-lg-4">
+                      <img
+                        class="rounded-circle student-image mb-4"
+                        src="assets/images/students/student-7.jfif"
+                        alt="avatar"
+                      />
+                      <h5 class="mb-3">Kaisen</h5>
+                      <p>Backend Developement</p>
+                      <p>
+                        <i class="fas fa-quote-left pe-2"></i>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Quod eos id officiis hic tenetur quae quaerat ad
+                        velit ab hic tenetur.
+                      </p>
+                      <ul
+                        class="list-unstyled d-flex justify-content-center text-warning mb-0"
+                      >
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                      </ul>
+                    </div>
+
+                    <!-- single student  -->
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <img
+                        class="rounded-circle student-image mb-4"
+                        src="assets/images/students/student-8.jfif"
+                        alt="avatar"
+                      />
+                      <h5 class="mb-3">Tom Cruise</h5>
+                      <p>Competitive Programming</p>
+                      <p>
+                        <i class="fas fa-quote-left pe-2"></i>
+                        Ut enim ad minima veniam, quis nostrum exercitationem
+                        ullam corporis suscipit laboriosam, nisi ut aliquid
+                        commodi.
+                      </p>
+                      <ul
+                        class="list-unstyled d-flex justify-content-center text-warning mb-0"
+                      >
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li>
+                          <i class="fas fa-star-half-alt fa-sm"></i>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- single student  -->
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <img
+                        class="rounded-circle student-image mb-4"
+                        src="assets/images/students/student-9.jfif"
+                        alt="avatar"
+                      />
+                      <h5 class="mb-3">Lord Beerus</h5>
+                      <p>Ultra instinct</p>
+                      <p>
+                        <i class="fas fa-quote-left pe-2"></i>
+                        At vero eos et accusamus et iusto odio dignissimos
+                        ducimus qui blanditiis praesentium voluptatum deleniti
+                        atque corrupti.
+                      </p>
+                      <ul
+                        class="list-unstyled d-flex justify-content-center text-warning mb-0"
+                      >
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="far fa-star fa-sm"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a
+              class="carousel-control-prev"
+              role="button"
+              href="#students"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              role="button"
+              href="#students"
+              data-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <!-- Inner -->
+          </div>
+          <!-- Carousel wrapper -->
+        </div>
+      </div>
+
+      <footer>
+        <!-- Footer Elements -->
+        <div id="contact" class="container">
+          <!-- company logo & name -->
+          <div class="row py-5 justify-content-center">
+            <div class="myLSQImg img mr-2">
+              <img class="img-fluid" src="assets/images/logo.jpg" alt="" />
+            </div>
+            <div>
+              <p class="h4">Lsqlearningsite.com</p>
+            </div>
+          </div>
+
+          <!-- Grid row-->
+          <div class="row justify-content-center">
+            <!-- twitter-icon  -->
+            <div class="col-md-1 col-2 ml-md-3">
+              <a href="#!" class="twitter"
+                ><i class="fab fa-twitter fa-xl"></i
+              ></a>
+            </div>
+
+            <!-- facebook icon  -->
+            <div class="col-md-1 col-2 ml-md-3">
+              <a href="#!" class="facebook"
+                ><i class="fab fa-facebook fa-xl"></i
+              ></a>
+            </div>
+
+            <!-- instagram icon  -->
+            <div class="col-md-1 col-2 ml-md-3">
+              <a href="#!" class="instagram"
+                ><i class="fab fa-instagram fa-xl"></i
+              ></a>
+            </div>
+
+            <!-- linked-in icon  -->
+            <div class="col-md-1 col-2 ml-md-3">
+              <a href="#!" class="linked-in"
+                ><i class="fab fa-linkedin-in fa-xl"></i
+              ></a>
+            </div>
+
+            <!-- youtube-icon  -->
+            <div class="col-md-1 col-2 ml-md-3">
+              <a href="#!" class="youtube"
+                ><i class="fab fa-youtube fa-xl"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-5">
+          © 2022 Copyright:
+          <a href="#"> Lsqlearningsite.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
